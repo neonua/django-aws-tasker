@@ -2,8 +2,8 @@ import boto3
 import botocore.exceptions
 import json
 
-from constants import LAMBDA_ASYNC_PAYLOAD_LIMIT
-from exceptions import *
+from .constants import LAMBDA_ASYNC_PAYLOAD_LIMIT
+from .exceptions import *
 
 
 ASYNC_RESPONSE_TABLE = None

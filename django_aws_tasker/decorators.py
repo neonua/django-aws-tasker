@@ -1,5 +1,5 @@
-from task import Task
-from utils import gen_task_name
+from .task import Task
+from .utils import gen_task_name
 
 
 def task(*args, **kwargs):

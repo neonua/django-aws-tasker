@@ -1,4 +1,4 @@
-from receiver import run_event
+from .receiver import run_event
 
 
 def route_lambda_task(event, context):
