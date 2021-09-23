@@ -41,7 +41,7 @@ if sys.argv[-1] == 'tag':
     sys.exit()
 
 setup(
-    name='lambda-django-tasker',
+    name='django-lambda-tasker',
     version=version,
     license="MIT",
     description='',
@@ -50,11 +50,11 @@ setup(
     author_email='neonua666@gmail.com',
     url='',
     packages=[
-        'lambda-django-tasker'
+        'django-lambda-tasker'
     ],
     install_requires=['Django>=3.2'],
     include_package_data=True,
-    keywords='lambda-django-tasker',
+    keywords='django-lambda-tasker',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
