@@ -9,7 +9,7 @@ except ImportError:
 
 
 def get_version(*file_paths):
-    """Retrieves the version from django-lambda-tasker/__init__.py"""
+    """Retrieves the version from django-aws-tasker/__init__.py"""
     filename = os.path.join(os.path.dirname(__file__), *file_paths)
     print(filename)
     version_file = open(filename).read()
@@ -20,7 +20,7 @@ def get_version(*file_paths):
     raise RuntimeError('Unable to find version string.')
 
 
-version = get_version("django-lambda-tasker", "__init__.py")
+version = get_version("django-aws-tasker", "__init__.py")
 
 
 if sys.argv[-1] == 'publish':
@@ -42,7 +42,7 @@ if sys.argv[-1] == 'tag':
     sys.exit()
 
 setup(
-    name='django-lambda-tasker',
+    name='django-aws-tasker',
     version=version,
     license="MIT",
     description='',
@@ -51,11 +51,11 @@ setup(
     author_email='neonua666@gmail.com',
     url='',
     packages=[
-        'django-lambda-tasker'
+        'django-aws-tasker'
     ],
     install_requires=['Django>=3.2'],
     include_package_data=True,
-    keywords='django-lambda-tasker',
+    keywords='django-aws-tasker',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
