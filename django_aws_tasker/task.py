@@ -101,7 +101,7 @@ class LambdaAsyncResponse:
         """
         Given a message, directly invoke the lamdba function for this task.
         """
-        message['command'] = 'route_lambda_task'
+        message['command'] = 'django_aws_tasker.routes.route_lambda_task'
         payload = json.dumps(message).encode("utf-8")
 
         if len(payload) > LAMBDA_ASYNC_PAYLOAD_LIMIT:  # pragma: no cover
