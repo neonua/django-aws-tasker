@@ -12,6 +12,7 @@ except ImportError:
 def get_version(*file_paths):
     """Retrieves the version from django-lambda-tasker/__init__.py"""
     filename = os.path.join(os.path.dirname(__file__), *file_paths)
+    print(filename)
     version_file = open(filename).read()
     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
                               version_file, re.M)
