@@ -8,6 +8,5 @@ django.setup()
 
 
 def run_event(event):
-    print('WOW1')
     func = import_string(event["task_path"])
     return func(*event["args"], **event["kwargs"])
