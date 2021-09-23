@@ -1,0 +1,4 @@
+tox
+twine
+boto3>=1.18
+Django>=2.2
